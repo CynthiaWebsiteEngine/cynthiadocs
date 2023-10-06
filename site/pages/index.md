@@ -1,4 +1,6 @@
-# Hello!
-This is an example page from CynthiaCMS.
+# CynthiaDocs
+Welcome to the documentation of CynthiaCMS.
 
-If you are here because you just set up a new Cynthia instance, we have a page [to get you started](/p/getting-started/)!
+
+
+For now, we only have a page [to get you started](/p/getting-started/).
