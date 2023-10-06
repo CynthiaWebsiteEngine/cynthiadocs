@@ -68,5 +68,9 @@ border-top: 10px none #555555;
 border-right: 2px ridge #555555;
 border-bottom: 2px dashed #ffff8f;
 border-left: 5px groove #555555;
-padding: 2px;
+padding: 0px;
+margin: 5px;
+}
+blockquote:hover {
+  border-left: 10px groove #dd2ca5;
 }

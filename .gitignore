@@ -6,3 +6,4 @@ package.json
 package-lock.json
 pack.sh
 .env
+*.kate-swp

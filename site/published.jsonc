@@ -19,5 +19,14 @@
 			"path": "1.md"
 		},
 		"mode": "default"
+	},
+	{
+		"id": "files.published.jsonc",
+		"title": "Files - published.jsonc",
+		"content": {
+			"type": "markdown",
+			"location": "local",
+			"path": "files/published.jsonc.md"
+		}
 	}
 ]
