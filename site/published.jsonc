@@ -1,7 +1,7 @@
 [
 	{
 		"id": "root",
-		"title": "An empty home",
+		"title": "Home",
 		"content": {
 			"type": "markdown",
 			"location": "local",
@@ -19,25 +19,5 @@
 			"path": "../../GETTINGSTARTED.MD"
 		},
 		"mode": "strawmelonjuice-cynthia"
-	},
-	{
-		"id": "2",
-		"title": "A second page!",
-		"content": {
-			"type": "text",
-			"location": "inline",
-			"raw": "Hello, this is a second page on Cynthia!"
-		}
-	},
-	{
-		"id": "about",
-		"title": "About Cynthia",
-		"content": {
-			"type": "markdown",
-			"location": "external",
-			"url": "https://raw.githubusercontent.com/strawmelonjuice/CynthiaCMS-JS/main/README.MD"
-		},
-		"mode": "strawmelonjuice-cynthia",
-		"type": "page"
 	}
 ]

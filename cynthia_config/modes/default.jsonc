@@ -1,18 +1,18 @@
 [
-	"default",
+	"strawmelonjuice-cynthia",
 	{
-		"sitename": "My Cynthia site!",
-		"stylefile": "default.css",
+		"sitename": "Cynthia documentation",
+		"stylefile": "cynthia.css",
 		"handlebar": {
 			"post": "default",
-			"page": "default"
+			"page": "cynthia-docs"
 		},
 		"menulinks": [
-			{"name": "A home page!", "href": "/"},
-			{ "name": "Another page", "href": "/p/2" },
+			{"name": "Home", "href": "/"},
+			{"name":"Getting Started", "href":"/p/getting-started/"},
 			{
-				"name": "About Cynthia",
-				"href": "https://github.com/strawmelonjuice/CynthiaCMS-JS/blob/main/README.MD"
+				"name": "GitHub",
+				"href": "https://github.com/strawmelonjuice/CynthiaCMS-JS/"
 			}
 		]
 	}
