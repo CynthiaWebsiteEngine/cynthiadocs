@@ -3,4 +3,4 @@
 cynthia_config/templates/*.handlebars linguist-vendored
 cynthia_config/styles/*.css linguist-vendored
 site/* linguist-detectable
-*.md linguist-language=Markdown
+site/* -linguist-documentation
