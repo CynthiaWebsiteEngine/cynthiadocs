@@ -1,3 +1,4 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 cynthia_config/templates/*.handlebars linguist-vendored
+cynthia_config/styles/*.css linguist-vendored
