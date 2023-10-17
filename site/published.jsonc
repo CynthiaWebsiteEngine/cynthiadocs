@@ -14,9 +14,9 @@
 		"id": "getting-started",
 		"title": "Getting started with CynthiaCMS",
 		"content": {
-			"type": "markdown",
+			"type": "html",
 			"location": "local",
-			"path": "1.md"
+			"path": "1.html"
 		},
 		"mode": "default"
 	},
