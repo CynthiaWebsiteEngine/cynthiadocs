@@ -1,0 +1,268 @@
+<style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .file-comment {
+        color: #d1d1d1;
+    }
+
+    .file-comment::before {
+        content: "//* "
+    }
+
+    .file-comment::after {
+        content: " *//"
+    }
+
+    .folder {
+        list-style-image: url("/assets/svg/folder.svg");
+        /* background-color: #ffff8fbe; */
+        /* border-top: none; */
+        width: fit-content;
+        border-right: none;
+        border-bottom: 2px dashed #ffff8f;
+        /* border-left: 2px dashed #ffff8f; */
+        border-left: none;
+        /* border-left: 3px groove #5555557c; */
+        padding: 0px;
+        margin: 0px;
+        /* margin-left: 1.5em; */
+        margin-bottom: 3px;
+        margin-top: 3px;
+
+    }
+
+    .folder>text:first-child::after {
+        content: "/";
+    }
+
+    /* 
+    .folder:hover {
+        border-left: 3px groove #dd2ca57c;
+    } */
+
+
+    .file {
+        list-style-image: url("/assets/svg/file.svg");
+
+        padding: 0px;
+        margin: 0px;
+        margin-left: 1em;
+        font-weight: bold;
+    }
+
+    .archive {
+        padding: 0px;
+        margin: 0px;
+        list-style-image: url("/assets/svg/archive.svg");
+        margin-left: 1em;
+    }
+
+    
+    .legend {
+        font-family: serif;
+    }
+
+    .needsrestart {
+        color: rgb(28, 122, 122);
+    }
+
+    .editable {
+        /* text-decoration-line: overline;
+        text-decoration-color: green;
+        text-decoration-style: wavy; */
+        border-bottom: green double 3px;
+    }
+
+    .breakable {
+        /* text-decoration-line: overline;
+        text-decoration-color: green;
+        text-decoration-style: wavy; */
+        border-bottom: red double 3px;
+    }
+
+
+    .npmfile {
+        color: #f57231;
+        border-right: #f57231 double 3px;
+    }
+
+    .updating {
+        color: rgb(136, 74, 43);
+        border-right: rgb(136, 74, 43) double 3px;
+    }
+
+    td {
+        border-bottom: black 1px solid;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    .file,
+    .archive {
+        margin-bottom: 5px;
+        border-bottom: dotted rgba(142, 142, 142, 0.546) 2px;
+    }
+</style>
+
+<body>
+    <h1 id='getting-started-with-cynthia'>Getting started with Cynthia</h1>
+    <text>So, you have a clean Cynthia setup right here huh? Wanna get started setting it up?</text>
+    <h2 id='what-do-all-these-files-mean'>What do all these files mean?</h2>
+    <text><em>Explaining the Cynthia file tree.</em></text>
+    <text>&nbsp;</text>
+    <h2 id='cynthia-file-tree'>Cynthia file tree</h2>
+    <figure class='table-figure'>
+        <table>
+            <thead>
+                <tr>
+                    <th><em>Legend</em></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><text class="needsrestart legend">Aa</text></td>
+                    <td>Only cold-reloadable (You need to fully stop and restart Cynthia after editing this file.)</td>
+                </tr>
+                <tr>
+                    <td><text class="updating legend">Aa</text></td>
+                    <td>Updated on Cynthia updates (No need to touch)</td>
+                </tr>
+                <tr>
+                    <td><text class="npmfile legend">Aa</text></td>
+                    <td>Created and maintained by NPM (Do not touch!)</td>
+                </tr>
+                <tr>
+                    <td><text class="editable legend">Aa</text></td>
+                    <td>Config file (You can edit this file)</td>
+                </tr>
+                <tr>
+                    <td><text class="breakable legend">Aa</text></td>
+                    <td>Breakable file (Editing this file may break Cynthia!)</td>
+                </tr>
+            </tbody>
+        </table>
+    </figure>
+
+    <br><br>
+    <ul>
+        <li class="folder">
+            <text>cynthia folder</text>
+            <ul>
+                <li class="file">
+                    <text class="breakable updating">main.js</text>
+                    <text class="file-comment">Cynthia itself</text>
+                </li>
+                <li class="archive">
+                    <text class="updating">clean-cyn.tar.gz</text>
+                    <text class="file-comment">Stores a clean CynthiaConfig</text>
+                </li>
+                <li class="file">
+                    <text class="updating breakable">package.json</text>
+                    <text class="file-comment">Tells NPM how to start and install Cynthia</text>
+                </li>
+                <li class="file">
+                    <text class="npmfile breakable">package-lock.json</text>
+                    <text class="file-comment">Tells NPM what it has downloaded </text>
+                </li>
+                <li class="file">
+                    <text class="updating">README.md</text>
+                    <text class="file-comment">The Cynthia Readme file</text>
+                </li>
+                <li class="folder">
+                    <text class="npmfile breakable">node_modules</text>
+                    <text class="file-comment">created by NPM, stores dependencies of Cynthia</text>
+                </li>
+                <li class="file">
+                    <text class="needsrestart editable">.env</text>
+                </li>
+                <li class="folder">
+                    <text class="editable">cynthia_config</text>
+                    <ul>
+                        <li class="folder">
+                            <text class="folder needsrestart">modes</text>
+                            <ul>
+                                <li class="file editable needsrestart">default.jsonc</li><text class="file-comment">Sets the default environment and theme on root page of fresh Cynthia setuo</text>
+                                <li class="file needsrestart">strawmelonjuice-cynthia.jsonc</li>
+
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <text class="editable">styles</text>
+                            <ul>
+                                <li class="file">cynthia.css</li>
+                                <li class="file">default.css</li>
+
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <text class="editable">templates</text>
+                            <ul>
+                                <li class="file editable">default.handlebars</li>
+                                <li class="file editable">cynthia-docs.handlebars</li>
+
+                            </ul>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="folder">
+                    <text class="editable">site</text>
+                    <ul>
+                        <li class="folder">
+                            <text class="editable">assets</text>
+                            <ul>
+                                <li class="folder">
+                                    <text class="editable">svg</text>
+                                    <ul>
+                                        <li class="file">home.svg</li>
+                                        <li class="file">cynthia.svg</li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="folder">
+                            <text class="editable">pages</text>
+                            <ul>
+                                <li class="file">index.md</li>
+
+                            </ul>
+                        </li>
+                        <li class="file">
+                            <text class="editable">published.jsonc</text>
+                        </li>
+
+                    </ul>
+                </li>
+
+            </ul>
+        </li>
+
+    </ul>
+    <script>
+        function addtitle(el, ntitle) {
+            if (el.title == null) { el.title = ""; }
+            if (el.title !== "") { el.title = el.title + "\n"; }
+            el.title = el.title + ntitle;
+        }
+        function addtitletoclass(classname, ntit) {
+            var classe = document.getElementsByClassName(classname);
+            for (var i = 0; i < classe.length; i++) {
+                addtitle(classe[i], ntit);
+            }
+        }
+        addtitletoclass("archive","Archive file.");
+        addtitletoclass("npmfile","Made by NPM.");
+        addtitletoclass("needsrestart","You need to restart cynthia after editing this file.");
+        addtitletoclass("breakable","Editing this may break Cynthia!");
+        addtitletoclass("editable","Edit this for configuration changes.");
+        addtitletoclass("updating","This is updated when Cynthia updates.");
+
+    </script>
+</body>
+
+</html>
