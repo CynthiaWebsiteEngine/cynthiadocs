@@ -1,4 +1,5 @@
 @import url("https://strawmelonjuice.com/gfonts.php/https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap");
+
 body {
 	position: absolute;
 	top: 0px;
@@ -8,6 +9,7 @@ body {
 	font-family: "Fira Sans", sans-serif;
 	overflow-y: clip;
 }
+
 main {
 	border-radius: 10px;
 	background-color: rgb(175, 168, 182);
@@ -51,11 +53,23 @@ main {
 		height: auto;
 		position: relative;
 	}
+
 	#link-menu a {
 		float: left;
 	}
+
 	main {
 		margin-left: 0;
+	}
+
+	.on-desktop {
+		display: none;
+	}
+}
+
+@media screen and (min-width: 700px) {
+	.on-mobile {
+		display: none;
 	}
 }
 

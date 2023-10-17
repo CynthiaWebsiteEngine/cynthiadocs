@@ -5,9 +5,11 @@
 
     .file-comment {
         color: #d1d1d1;
+        font-weight: normal;
     }
 
     .file-comment::before {
+        margin-left: 2em;
         content: "//* "
     }
 
@@ -105,6 +107,14 @@
         margin-bottom: 5px;
         border-bottom: dotted rgba(142, 142, 142, 0.546) 2px;
     }
+    li {
+        padding-bottom: 5px;
+    }
+    .linke {
+        background-image: url("/assets/svg/link.svg");
+        background-repeat: no-repeat;
+        padding: 6px;
+    }
 </style>
 
 <body>
@@ -141,6 +151,10 @@
                 <tr>
                     <td><text class="breakable legend">Aa</text></td>
                     <td>Breakable file (Editing this file may break Cynthia!)</td>
+                </tr>
+                <tr>
+                    <td><img src="/assets/svg/link.svg" width="24px"></td>
+                    <td>Link to file/folder documentation.</td>
                 </tr>
             </tbody>
         </table>
@@ -184,9 +198,8 @@
                         <li class="folder">
                             <text class="folder needsrestart">modes</text>
                             <ul>
-                                <li class="file editable needsrestart">default.jsonc</li><text class="file-comment">Sets the default environment and theme on root page of fresh Cynthia setup</text>
+                                <li class="file"><text class="editable needsrestart">default.jsonc</text><text class="file-comment">Sets the default environment and theme on root page of fresh Cynthia setup</text></li>
                                 <li class="file needsrestart">strawmelonjuice-cynthia.jsonc</li>
-
                             </ul>
                         </li>
                         <li class="folder">
@@ -233,7 +246,7 @@
                             </ul>
                         </li>
                         <li class="file">
-                            <text class="editable">published.jsonc</text>
+                            <text class="editable">published.jsonc</text> <a href="/p/files.published.jsonc" class="linke"></a>
                         </li>
 
                     </ul>

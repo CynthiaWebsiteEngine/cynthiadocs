@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="12"
+   height="12"
+   viewBox="0 0 12 12"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="exlink.svg"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="30.791667"
+     inkscape:cx="2.4519621"
+     inkscape:cy="5.699594"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <title
+     id="title1">&#10;		external link&#10;	</title>
+  <path
+     style="display:inline;fill:#46289c;fill-opacity:1;stroke:#46289c;stroke-width:1.252;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="m 3.766133,3.4446338 c -2.4112437,0 -2.4571721,-0.022964 -2.4571721,-0.022964 l -0.1377854,7.1418742 7.3485522,0.06889 0.045928,-2.5490284 -0.045928,2.4801364 H 1.1941397 L 1.3089609,3.4446338 Z"
+     id="path2"
+     inkscape:label="hole" />
+  <path
+     style="fill:#46289c;fill-opacity:1;stroke:#46289c;stroke-width:1.252;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     d="M 4.4320955,7.6241229 10.953936,1.0104259 10.999864,5.9247702 5.9936629,1.0563544 H 10.953936 Z"
+     id="path3"
+     inkscape:label="arrow" />
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>&#10;		external link&#10;	</dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
