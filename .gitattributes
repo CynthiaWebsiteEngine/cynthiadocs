@@ -4,6 +4,6 @@ cynthia_config/templates/*.handlebars linguist-vendored
 cynthia_config/styles/*.css linguist-vendored
 site/* linguist-detectable
 site/* -linguist-documentation
-*.md linguist-language=Markdown
+*.md linguist-language=Python
 *.jsonc linguist-language=JSON
 *.embeddedhtml linguist-language=HTML
