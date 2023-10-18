@@ -5,5 +5,5 @@ cynthia_config/styles/*.css linguist-vendored
 site/* linguist-detectable
 site/* -linguist-documentation
 *.md linguist-language=MTML
-*.jsonc linguist-language=JSON-C
+*.jsonc linguist-language=JSONC
 *.embeddedhtml linguist-language=HTML
