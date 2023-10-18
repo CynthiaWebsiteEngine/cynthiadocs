@@ -10,6 +10,7 @@
 		"menulinks": [
 			{"name": "Home", "href": "/"},
 			{"name":"Getting Started", "href":"/p/getting-started/"},
+			{"name": "Cynthia filetree", "href": "/p/files/"},
 			{
 				"name": "GitHub",
 				"href": "https://github.com/strawmelonjuice/CynthiaCMS-JS/"

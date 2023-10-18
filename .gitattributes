@@ -6,3 +6,4 @@ site/* linguist-detectable
 site/* -linguist-documentation
 *.md linguist-language=Markdown
 *.jsonc linguist-language=JSON
+*.embeddedhtml linguist-language=HTML

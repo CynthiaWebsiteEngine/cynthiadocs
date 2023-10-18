@@ -1,0 +1,149 @@
+<p><em>Last updated for Cynthia CMS <code>v0.2.1</code>.</em></p>
+<style>
+
+    .file-comment {
+        color: #d1d1d1;
+        font-weight: normal;
+    }
+
+    .file-comment::before {
+        margin-left: 2em;
+        content: "//* "
+    }
+
+    .file-comment::after {
+        content: " *//"
+    }
+
+    .folder {
+        list-style-image: url("/assets/svg/folder.svg");
+        /* background-color: #ffff8fbe; */
+        /* border-top: none; */
+        width: fit-content;
+        border-right: none;
+        border-bottom: 2px dashed #ffff8f;
+        /* border-left: 2px dashed #ffff8f; */
+        border-left: none;
+        /* border-left: 3px groove #5555557c; */
+        padding: 0px;
+        margin: 0px;
+        /* margin-left: 1.5em; */
+        margin-bottom: 3px;
+        margin-top: 3px;
+
+    }
+
+    .folder>text:first-child::after {
+        content: "/";
+    }
+
+    /* 
+    .folder:hover {
+        border-left: 3px groove #dd2ca57c;
+    } */
+
+
+    .file {
+        list-style-image: url("/assets/svg/file.svg");
+
+        padding: 0px;
+        margin: 0px;
+        margin-left: 1em;
+        font-weight: bold;
+    }
+
+    .archive {
+        padding: 0px;
+        margin: 0px;
+        list-style-image: url("/assets/svg/archive.svg");
+        margin-left: 1em;
+    }
+
+
+    .legend {
+        font-family: serif;
+    }
+
+    .needsrestart {
+        color: rgb(28, 122, 122);
+    }
+
+    .editable {
+        /* text-decoration-line: overline;
+        text-decoration-color: green;
+        text-decoration-style: wavy; */
+        border-bottom: green double 3px;
+    }
+
+    .breakable {
+        /* text-decoration-line: overline;
+        text-decoration-color: green;
+        text-decoration-style: wavy; */
+        border-bottom: red double 3px;
+    }
+
+
+    .npmfile {
+        color: #f57231;
+        border-right: #f57231 double 3px;
+    }
+
+    .updating {
+        color: rgb(136, 74, 43);
+        border-right: rgb(136, 74, 43) double 3px;
+    }
+
+    td {
+        border-bottom: black 1px solid;
+        margin-bottom: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px
+    }
+
+    .file,
+    .archive {
+        margin-bottom: 5px;
+        border-bottom: dotted rgba(142, 142, 142, 0.546) 2px;
+    }
+
+    li {
+        padding-bottom: 5px;
+    }
+
+    .linke {
+        background-image: url("/assets/svg/link.svg");
+        background-repeat: no-repeat;
+        padding: 6px;
+    }
+</style>
+
+<h1><a href="/p/files/">.</a>/<em>site</em></h1>
+
+<ul>
+                    <li class="folder">
+                        <text class="editable">assets</text>
+                        <ul>
+                            <li class="folder">
+                                <text class="editable">svg</text>
+                                <ul>
+                                    <li class="file">home.svg</li>
+                                    <li class="file">cynthia.svg</li>
+
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li class="folder">
+                        <text class="editable">pages</text>
+                        <ul>
+                            <li class="file">index.md</li>
+
+                        </ul>
+                    </li>
+                    <li class="file">
+                        <text class="editable" data-fullpath="./site/published.jsonc" data-filename="published.jsonc"
+                            onmouseover="expand_path(this)">published.jsonc</text> <a href="/p/files.site.published.jsonc"
+                            class="linke"></a>
+                    </li>
+</ul>

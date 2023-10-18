@@ -11,22 +11,49 @@
 		"mode": "default"
 	},
 	{
-		"id": "getting-started",
-		"title": "Getting started with CynthiaCMS",
+		"id": "files",
+		"title": "CynthiaCMS's file tree",
 		"content": {
 			"type": "html",
 			"location": "local",
-			"path": "1.html"
+			"path": "1.embeddedhtml"
 		},
 		"mode": "default"
 	},
 	{
-		"id": "files.published.jsonc",
-		"title": "Files - published.jsonc",
+		"id": "getting-started",
+		"title": "Getting started with CynthiaCMS",
 		"content": {
 			"type": "markdown",
 			"location": "local",
-			"path": "files/published.jsonc.md"
+			"path": "guide.md"
+		},
+		"mode": "default"
+	},
+	// {
+	// 	"id": "getting-started",
+	// 	"content": {
+	// 		"location": "redirect",
+	// 		"url": "/p/files/"
+	// 	},
+	// 	"mode": "default"
+	// },
+	{
+		"id": "files.site.published.jsonc",
+		"title": "Files - ./site/published.jsonc",
+		"content": {
+			"type": "markdown",
+			"location": "local",
+			"path": "files/site/published.jsonc.md"
+		}
+	},
+	{
+		"id": "files.site",
+		"title": "Files - ./site/",
+		"content": {
+			"type": "html",
+			"location": "local",
+			"path": "files/site.embeddedhtml"
 		}
 	}
 ]
